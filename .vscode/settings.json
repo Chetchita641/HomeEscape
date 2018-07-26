@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/.vscode": true,
+		"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/Content": true,
+		"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/Intermediate": true
+	}
+}

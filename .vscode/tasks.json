@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "HomeEscape Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Mac",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"IOS",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"HTML5",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"Linux",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Shipping",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscape TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscape TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscape",
+				"TVOS",
+				"Test",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Linux",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Linux",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscapeEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Linux",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Linux",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Linux",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscapeEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Linux",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Linux",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Linux",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscapeEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Linux",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Mac",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Mac",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscapeEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Mac",
+				"Debug",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Mac",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Mac",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscapeEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Mac",
+				"DebugGame",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Mac",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Mac",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"HomeEscapeEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "HomeEscapeEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"HomeEscapeEditor",
+				"Mac",
+				"Development",
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/cmacholtz/UnrealEngine-release"
+			}
+		}
+	]
+}

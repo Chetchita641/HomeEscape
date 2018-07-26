@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{1BD150AE-2F05-0F11-0022-0079845148FF}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "HomeEscape",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

@@ -1,0 +1,106 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "HomeEscape (Debug)",
+			"request": "launch",
+			"preLaunchTask": "HomeEscape Linux Debug Build",
+			"program": "/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/Binaries/Linux/HomeEscape-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/cmacholtz/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "HomeEscape (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "HomeEscape Linux DebugGame Build",
+			"program": "/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/Binaries/Linux/HomeEscape-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/cmacholtz/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "HomeEscape (Development)",
+			"request": "launch",
+			"preLaunchTask": "HomeEscape Linux Development Build",
+			"program": "/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/Binaries/Linux/HomeEscape",
+			"args": [
+			],
+			"cwd": "/home/cmacholtz/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "HomeEscape (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "HomeEscape Linux Shipping Build",
+			"program": "/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/Binaries/Linux/HomeEscape-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/cmacholtz/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "HomeEscape (Test)",
+			"request": "launch",
+			"preLaunchTask": "HomeEscape Linux Test Build",
+			"program": "/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/Binaries/Linux/HomeEscape-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/cmacholtz/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "HomeEscapeEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "HomeEscapeEditor Linux Debug Build",
+			"program": "/home/cmacholtz/UnrealEngine-release/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-debug"
+			],
+			"cwd": "/home/cmacholtz/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "HomeEscapeEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "HomeEscapeEditor Linux DebugGame Build",
+			"program": "/home/cmacholtz/UnrealEngine-release/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject",
+				"-debug"
+			],
+			"cwd": "/home/cmacholtz/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "HomeEscapeEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "HomeEscapeEditor Linux Development Build",
+			"program": "/home/cmacholtz/UnrealEngine-release/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject"
+			],
+			"cwd": "/home/cmacholtz/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/cmacholtz/UnrealEngine-release/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/cmacholtz/projects/Unreal/HomeEscape/HomeEscape/HomeEscape.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/cmacholtz/UnrealEngine-release"
+		}
+	]
+}
